@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://kit.fontawesome.com/85e234d146.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&display=swap" rel="stylesheet">
+<title>初音ミクのミュージックカレー</title>
+<link rel="stylesheet" href="reset.css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="first center">
+		<div class="first-wrapper">
+		<h1>初音ミクのミュージックカレー</h1>
+		<p>このサイトでは音が出ます</p>
+		<button class="start">はじめる！</button>
+		</div>
+	</div>
+	
+	<div class="done displaynone">
+		<img src="./images/food_curryrice_white.png" class="dekitayo">
+		<div class="no-curry">
+		<span id="hourensou" class="displaynone">ほうれんそう </span>
+		<span id="satumaimo" class="displaynone">さつまいも </span>
+		<span id="ninjin" class="displaynone">にんじん </span>
+		<span id="jagaimo" class="displaynone">じゃがいも </span>
+		<span id="tamanegi" class="displaynone">たまねぎ </span>
+		<span id="gyuuniku" class="displaynone">ぎゅうにく </span>
+		<span id="butaniku" class="displaynone">ぶたにく </span>
+		<span id="toriniku" class="displaynone">とりにく </span>
+		<span id="hikiniku" class="displaynone">ひきにく </span>
+		<span id="tomato" class="displaynone">トマト </span>
+		<span id="kabotya" class="displaynone">かぼちゃ </span>
+		<span id="kinoko" class="displaynone">きのこ </span>
+		<span id="ringo" class="displaynone">りんご </span>
+		<span id="nasu" class="displaynone">なす </span>
+		<span id="tamago" class="displaynone">たまご </span>
+		<span id="dekitacurry">のカレー</span>
+		</div>
+		<button class="restart unshown" onclick="window.location.reload(true);">もう一回つくる</button>
+	</div>
+	
+	<div class="mikumain">
+		<div class="img-wrapper">
+			<img src="./images/1.png" class="mainimg img1">
+			<img src="./images/2.png" class="mainimg img2">
+		</div>
+	</div>
+	
+	<audio src="./sound/oke.mp3" id="oke1"></audio>
+	<audio src="./sound/oke2.mp3" id="oke2"></audio>
+	<audio src="./sound/oke-kansei.mp3" id="okeKansei"></audio>
+	<audio src="./sound/no-kare-.mp3" id="nokaree"></audio>
+	
+	<div class="no1" id="dummy1">
+	<audio src="./sound/dummy1.mp3"></audio>
+	</div>
+	<div class="no2" id="dummy2">
+	<audio src="./sound/dummy2.mp3"></audio>
+	</div>
+	<div class="no3" id="dummy3">
+	<audio src="./sound/dummy3.mp3"></audio>
+	</div>
+	<div class="no4" id="dummy4">
+	<audio src="./sound/dummy4.mp3"></audio>
+	</div>
+	<div class="no5" id="dummy5">
+	<audio src="./sound/dummy5.mp3"></audio>
+	</div>
+	<div class="no6" id="dummy6">
+	<audio src="./sound/dummy6.mp3"></audio>
+	</div>
+	<div class="no7" id="dummy7">
+	<audio src="./sound/dummy7.mp3"></audio>
+	</div>
+	
+	<div class="ingredients center">
+		<div class="ing" id="ingbox1"></div>
+		<div class="ing" id="ingbox2"></div>
+		<div class="ing" id="ingbox3"></div>
+		<div class="ing" id="ingbox4"></div>
+		<div class="ing" id="ingbox5"></div>
+		<div class="ing" id="ingbox6"></div>
+		<div class="ing" id="ingbox7"></div>
+	</div>
+	
+	<div class="instruction center">
+	<p id="guzaiwoerandene">カレーに入れる具材を選んでね！</p>
+	<button class="displaynone" id="finishbutton">この具材で作る！</button>
+	</div>
+
+	<div class="materials">
+		<div class="mat hako1" id="mat1">
+			<img src="./images/hourensou_spinach.png">
+			<p>ほうれんそう</p>
+			<audio src="./sound/gu-hourensou.mp3" class="audio1"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat2">
+			<img src="./images/satsumaimo_sweetpotato.png">
+			<p>さつまいも</p>
+			<audio src="./sound/gu-satumaimo.mp3" class="audio2"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat3">
+			<img src="./images/ninjin_carrot.png">
+			<p>にんじん</p>
+			<audio src="./sound/gu-ninjin.mp3" class="audio3"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat4">
+			<img src="./images/vegetable_maru_dansyaku.png">
+			<p>じゃがいも</p>
+			<audio src="./sound/gu-jagaimo.mp3" class="audio4"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat5">
+			<img src="./images/tamanegi_onion.png">
+			<p>たまねぎ</p>
+			<audio src="./sound/gu-tamanegi.mp3" class="audio5"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat6">
+			<img src="./images/niku_gyu.png">
+			<p>ぎゅうにく</p>
+			<audio src="./sound/gu-gyuuniku.mp3" class="audio6"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat7">
+			<img src="./images/niku_buta.png">
+			<p>ぶたにく</p>
+			<audio src="./sound/gu-butaniku.mp3" class="audio7"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat8">
+			<img src="./images/niku_tori.png">
+			<p>とりにく</p>
+			<audio src="./sound/gu-toriniku.mp3" class="audio8"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat9">
+			<img src="./images/food_hikiniku_beef.png">
+			<p>ひきにく</p>
+			<audio src="./sound/gu-hikiniku.mp3" class="audio9"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat10">
+			<img src="./images/tomato_red.png">
+			<p>トマト</p>
+			<audio src="./sound/gu-tomato.mp3" class="audio10"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat11">
+			<img src="./images/kabocha.png">
+			<p>かぼちゃ</p>
+			<audio src="./sound/gu-kabotya.mp3" class="audio11"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat12">
+			<img src="./images/kinoko_shimeji.png">
+			<p>きのこ</p>
+			<audio src="./sound/gu-kinoko.mp3" class="audio12"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat13">
+			<img src="./images/fruit_apple.png">
+			<p>りんご</p>
+			<audio src="./sound/gu-ringo.mp3" class="audio13"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat14">
+			<img src="./images/nasu_eggplant.png">
+			<p>なす</p>
+			<audio src="./sound/gu-nasu.mp3" class="audio14"></audio>
+		</div>
+		
+		<div class="mat hako1" id="mat15">
+			<img src="./images/egg_white.png">
+			<p>たまご</p>
+			<audio src="./sound/gu-tamago.mp3" class="audio15"></audio>
+		</div>
+	
+	</div>
+	
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

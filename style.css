@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#FFF9DA;
+	background-size:cover;
+}
+.center{
+	text-align:center;
+	margin:0 auto;
+}
+
+.hidden{
+	opacity:0;
+	transition: 0.2s all;
+}
+
+.displaynone{
+	display:none;
+}
+
+.unshown{
+	display:none;
+}
+
+.first{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-color:#FFF9DA;
+	color:#431616;
+}
+
+h1{
+	font-size:25px;
+	margin:10px;
+}
+
+.first-wrapper{
+	position:relative;
+	top:300px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.start{
+	margin:20px auto 20px auto;
+	padding:15px 30px;
+	background-color:#FFB833;
+	color:white;
+	border-radius:25px;
+	box-shadow:0px 3px 0px 2px rgba(0,0,0,0.5);
+	transition: 0.2s all;
+}
+
+.start:hover{
+	transform:scale(1.2);
+}
+.start:active{
+	box-shadow:0px 0px 0px 0px rgba(0,0,0,0);
+	transform: translateY(3px);
+}
+
+
+.img-wrapper{
+	position:relative;
+	z-index:-999;
+	height:500px;
+}
+
+
+.mainimg{
+	position:absolute;
+	margin:0 auto;
+	max-width:600px;
+	width:100%;
+	left:50%;
+	transform: translate(-50%, 0%);
+	animation: img-switch 1s infinite;
+}
+
+@keyframes img-switch{
+	0%{opacity:0;}
+	49.9%{opacity:0;}
+	50%{opacity:1;}
+	99.9%{opacity:1;}
+	100%{opacity:0;}
+}
+
+.img2 {
+	animation-delay:0.5s;
+}
+
+.materials{
+	max-width:600px;
+	width:100%;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+
+.mat{
+	width:16%;
+	text-align:center;
+	height:80px;
+	margin:8px;
+	background-color:white;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:14px;
+	cursor:pointer;
+	transition: 0.2s all;
+}
+
+.mat:hover{
+	transform:scale(1.1);
+}
+
+.mat:active{
+	transform:scale(1);
+}
+
+
+.selected{
+	pointer-events:none;
+	background-color:#FFD5BF;
+	transition:0.1s all;
+}
+
+.locked{
+	pointer-events:none;
+}
+
+
+.ingredients{
+	margin:0px auto 10px auto;
+	max-width:600px;
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	transition:0.2s all;
+}
+
+.mat img{
+	max-width:100px;
+	width:60%;
+}
+
+.ing{
+	background-color:#fff;
+	width:10%;
+	height:50px;
+	border:2px solid #FFD5BF;
+	position:relative;
+	z-index:-999;
+}
+
+.ingimg{
+	max-width:70px;
+	width:60%;
+	position:absolute;
+	top:50%;
+	left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.nowplaythis{
+	background-color:#FFD5BF;
+	transition:0.1s all;
+}
+
+.instruction{
+	text-align:center;
+	color:#431616;
+	margin-bottom:20px;
+	height:30px;
+
+}
+#guzaiwoerandene{
+	padding-top:15px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:20px;
+}
+
+#finishbutton{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:14px;
+	padding:10px 20px;
+	background-color:#FFB833;
+	color:white;
+	border-radius:25px;
+	box-shadow:0px 3px 0px 2px rgba(0,0,0,0.5);
+	transition: 0.2s all;
+	animation: buttonisactive 1s infinite;
+}
+
+#finishbutton:hover{
+	transform:scale(1.2);
+}
+#finishbutton:active{
+	box-shadow:0px 0px 0px 0px rgba(0,0,0,0);
+	transform: translateY(3px);
+}
+
+@keyframes buttonisactive{
+	0%{background-color:#FFB833;}
+	50%{background-color:#FFD585;}
+	100%{background-color:#FFB833;}
+}
+
+.done{
+	position:fixed;
+	background-color:#FFF9DA;
+	z-index:999;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+
+.done img{
+	position:absolute;
+	margin:0 auto;
+	max-width:600px;
+	width:100%;
+	left:50%;
+	transform: translate(-50%, 0%);
+}
+.no-curry{
+	margin-top:450px;
+}
+.done span{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:18px;
+	color:#431616;
+	max-width:600px;
+}
+
+.restart{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:14px;
+	padding:10px 20px;
+	background-color:#FFB833;
+	color:white;
+	border-radius:25px;
+	box-shadow:0px 3px 0px 2px rgba(0,0,0,0.5);
+	transition: 0.2s all;
+	margin-top:20px;
+}
+
+.restart:hover{
+	transform:scale(1.2);
+}
+.restart:active{
+	box-shadow:0px 0px 0px 0px rgba(0,0,0,0);
+	transform: translateY(3px);
+}
+
+/*わかりやすくするためのやつ
+.no1{
+	border:solid 2px #F00;
+}
+
+.no2{
+	border:solid 2px #0F0;
+}
+
+.no3{
+	border:solid 2px #00F;
+}
+
+.no4{
+	border:solid 2px #FF6BF9;
+}
+
+.no5{
+	border:solid 2px #B254E3;
+}
+
+.no6{
+	border:solid 2px #000000;
+}
+
+.no7{
+	border:solid 2px #FFC059;
+}
+
+.hako1{
+	background-color:#F00;
+}
+
+.hako2{
+	background-color:#0F0;
+}
+
+.hako3{
+	background-color:#00F;
+}
+
+.hako4{
+	background-color:#FF6BF9;
+}
+
+.hako5{
+	background-color:#B254E3;
+}
+
+.hako6{
+	background-color:#000000;
+}
+
+.hako7{
+	background-color:#FF6E00;
+}*/
