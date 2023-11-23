@@ -561,6 +561,6 @@ $(function(){
 		setTimeout(function(){$("#nokaree").get(0).play();},8000);
 		setTimeout(function(){
 			$(".restart").removeClass("unshown");
-		},9000);
+		},11000);
 	});
 });
